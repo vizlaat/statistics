@@ -1,0 +1,44 @@
+body
+{
+	padding-top: 100px;
+
+}
+
+.container
+{
+	margin-left: 5%;
+}
+
+a
+{
+	color: grey
+}
+
+a .active
+{
+	color: white;
+}
+
+a .non-active
+{
+	opacity: 0.1;
+	pointer-events: none;
+	cursor: default;	
+}
+
+.active
+{
+	color: blue;
+}
+
+label
+{
+	margin-left: 10px;
+	color: blue;
+	
+}
+
+.presentation
+{
+	padding-top: 10px;
+}
