@@ -15,7 +15,7 @@ public class TestData {
 	public static final String EDGE_DRIVER = "C:\\selenium\\edge-driver\\MicrossoftWebDriver.exe";
 	public static final String OPERA_DRIVER = "C:\\selenium\\opera-driver\\operadriver.exe";
 	public static final String BASE_URL = "http://localhost:8090/";
-	public static final String SAMPLE_DATA = "C:\\selenium\\sample-data.csv";
+	public static final String SAMPLE_DATA = "src/test/resources/sample-data.csv";
 	public static final double DELTA = 0.001;
 	public static final double UNFILTERED_CORRELATION1 = 0.748;
 	public static final double WOMAN_CORRELATION1 = 0.882;
