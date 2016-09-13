@@ -117,11 +117,11 @@ $(document).ready(function(){
 	function createAverageText(data){
 		var text = '<div class="row"> <div class="col-md-12">';
 		text += '<h1> The averages for the number fields: </h1>';
-		text += '<table><thead><tr><td> Question</td> <td> Average </td></tr></thead><tbody> ';
+		text += '<table><thead><tr><td> Question</td> <td> Average </td></tr></thead><tbody class="averages"> ';
 		for(var index=0; index<data.length; index++){
 			var questionID = data[index].questionID;
 			var question = questions[questionID];
-			text += '<tr> <td>' + question + '</td><td>' + data[index].average + '</td></tr>';
+			text += '<tr> <td>' + question + '</td><td class="average-'+questionID+'">' + data[index].average + '</td></tr>';
 		};
 		text += '</tbody></table></div> </div>';
 		return text;
@@ -154,7 +154,7 @@ $(document).ready(function(){
 	function createCorrelationText(data){
 		var text = '<div class="row"> <div class="col-md-12">';
 		text += '<h1> The correlation between '+ questions[$('#correlationFieldOne').val()] +' and '+ questions[$('#correlationFieldTwo').val()]+':</h1>';
-		text += '<h2> '+ data +' </h2>'	
+		text += '<h2 class="correlation"> '+ data +' </h2>'	
 		text += '</div> </div>';
 		return text;
 	};

@@ -1,13 +1,12 @@
 package vzsolt.statistics.analyze.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import vzsolt.statistics.analyze.AverageCalculator;
 import vzsolt.statistics.analyze.Response;

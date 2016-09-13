@@ -4,6 +4,18 @@ body
 
 }
 
+@media screen and (max-width:767px) {
+	body {
+		padding-top: 300px;
+	}
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+	body {
+		padding-top: 200px;
+	}
+}
+
 .container
 {
 	margin-left: 5%;

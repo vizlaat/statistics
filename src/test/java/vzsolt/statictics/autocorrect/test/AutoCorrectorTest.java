@@ -82,7 +82,7 @@ public class AutoCorrectorTest {
 	public void autoCorrectWithInCorrectAnswerPointCheck() {
 		AutoCorrector autCorr = new AutoCorrector();
 		List<Response> corrected = autCorr.correctSurvey(initResponses,corrAns2);
-		assertEquals("0",corrected.get(0).getAnswerMap().get(4));		
+		assertEquals("0",corrected.get(0).getAnswerMap().get(3));		
 	}
 	
 }

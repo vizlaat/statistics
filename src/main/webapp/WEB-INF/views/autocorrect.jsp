@@ -25,9 +25,8 @@ $(document).ready(function(){
 		$(this).parent().parent().append('<div class="col-md-2"> <div class="row singleCorrect"> <div class="col-md-10"><input class="answer" type="text" placeHolder="answer"/></div> <div class="col-md-2"> <input class="point" type="text" placeHolder="point" size="2"/></div> </div> </div>');
 	});
 	
-	$("#")
 	
-	$("#submit").click(function(){
+	$("#submit").click(function(event){
 		event.preventDefault();
 		var onlyNumbers = true;
 		$(".point").each(function(){
@@ -60,7 +59,7 @@ $(document).ready(function(){
 			});	
 		};
 		$.ajax({
-			url:"evaluation",
+			url:"<c:url value="evaluation" />",
 			headers: { 
 		        'Accept': 'application/json',
 		        'Content-Type': 'application/json' 
@@ -84,7 +83,7 @@ $(document).ready(function(){
 			console.log('ajax is done');
 			$("#overview").show();
 		});
-		
+		return false;
 	});
 });
 
